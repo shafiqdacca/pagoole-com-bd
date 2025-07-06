@@ -59,24 +59,60 @@ nav ul a {
   color: #333;
 }
 
-h1 { font-size: 2.5rem; }  /* ~40px */
-h2 { font-size: 2rem; }    /* ~32px */
-h3 { font-size: 1.75rem; } /* ~28px */
-h4 { font-size: 1.5rem; }  /* ~24px */
-h5 { font-size: 1.25rem; } /* ~20px */
-h6 { font-size: 1rem; }    /* ~16px */
+h1 {
+  font-size: 2.5rem;
+}
 
+/* ~40px */
+h2 {
+  font-size: 2rem;
+}
+
+/* ~32px */
+h3 {
+  font-size: 1.75rem;
+}
+
+/* ~28px */
+h4 {
+  font-size: 1.5rem;
+}
+
+/* ~24px */
+h5 {
+  font-size: 1.25rem;
+}
+
+/* ~20px */
+h6 {
+  font-size: 1rem;
+}
+
+/* ~16px */
 .logo-text {
   font-weight: bold;
   font-size: 1.8rem;
-  background: linear-gradient(
-    90deg,
-    rgb(4, 145, 11),
-    #00ffaa,
-    rgb(255, 0, 0),
-    #8855ff,
-    #ff5599
-  );
+  background: linear-gradient(90deg,
+      #00ff00,
+      /* Bright green */
+      #00ffaa,
+      /* Cyan */
+      #e5ff00,
+      /* Blue */
+      #55ffff,
+      /* Purple */
+      #ff00ff,
+      /* Magenta */
+      #ff5599,
+      /* Pink */
+      #ff0000,
+      /* Red */
+      #ff9900,
+      /* Orange */
+      #ffff00
+      /* Yellow */
+    );
+
   vertical-align: middle;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -106,7 +142,8 @@ h6 { font-size: 1rem; }    /* ~16px */
   }
 
   .logo-text {
-    font-size: unset; /* or reduce, e.g., 1rem */
+    font-size: unset;
+    /* or reduce, e.g., 1rem */
   }
 }
 
@@ -280,7 +317,8 @@ ul {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -487,4 +525,3 @@ button1:hover {
     width: 0;
   }
 }
-

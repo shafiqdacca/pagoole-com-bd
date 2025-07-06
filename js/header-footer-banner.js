@@ -37,7 +37,7 @@ document.getElementById("header").innerHTML = `
 
       <div class="toggle">☰</div>
       <ul id="pagoole-menu">
-        <li><a href="index.html"><i class="fas fa-home" style="color: #3498db;"></i> Home</a></li>
+        <li><a href="index.html"><i class="fas fa-home" style="color: blue;"></i> Home</a></li>
         <li><a href="about.html"><i class="fas fa-user" style="color: #e67e22;"></i> About</a></li>
         <li><a href="portfolio.html"><i class="fas fa-briefcase" style="color: #2ecc71;"></i> Portfolio</a></li>
         <li><a href="services.html"><i class="fas fa-cog" style="color: #9b59b6;"></i> Services</a></li>

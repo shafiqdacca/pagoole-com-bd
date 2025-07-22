@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="keywords" content="pagoole, pagoole.com, pagoole.com.bd, পাগল, Shafiqul Islam Tuhin Pagoole, पागल">
+	<meta name="description" content="Shafiqul Islam Tuhin's portfolio website showcasing projects, skills, and professional experience.">
+  	<meta name="google-site-verification" content="EOVZXCqU2the-QJlMRozFEVrhzDu8CKWzNInLHU__vM">
+   <title>Shafiqul Islam Tuhin | Pagoole - পাগল </title>
+    <style>
+        /* General Styling */
+		body {
+			 font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2, #f8bbd0, #f48fb1, #ffccbc);
+            background-size: 400% 400%;
+            animation: gradientAnimation 30s ease infinite; /* Extended animation duration */
+       }
+       html {
+	          scroll-behavior: smooth;
+      }
+      .project-item a:hover {
+          color: #ff6347;
+          text-decoration: underline;
+      }
+
+
+
+
+        /* Header and Footer */
+        header {
+            background: linear-gradient(135deg, #ff5f6d, #ffc371, #ff7e5f, #feac5e, #c779d0, #4bc0c8, #24a3b5, #b2fe78, #0ed2f7, #45aaf2, #f7b733, #fc4a1a, #6db1d4, #d53369, #cbad6d, #bc4e9e, #ee6e9c, #d4c4b3, #ff6a88, #4e96ba, #c7d9ff, #f9a27c, #ff5f6d, #ff9a9e, #fda085, #f6e58d, #ff8f72, #ffafbd, #ffc3a0, #fdcb6e, #ffdd6b, #d1f7c4, #77d6e0, #ff9ff3, #b5d5d1, #f0e0e0, #3e92cc, #9f06ab, #d19c79, #f6d6ad, #f0c2c2, #8e8e4c, #f9d56c, #f8c291, #f8c74e, #a1a1a1, #8c1e6f, #ffed66, #ff6f61, #f093f0, #35d1c8, #15c1b5, #2ecc71, #3a539b, #f8a3c7, #ff85e4, #b76f92, #ff768a, #3e6f9b, #13d3d3, #ecf0f3, #d9e3ec, #bdb2c2, #e67e22, #ff4757, #3742fa, #ff6348, #ff7f50, #3d5af1, #7158f1, #ff9ff3, #d299e8, #f9d9f4, #c8d6e5, #e58e26, #c27ba0, #ff9a9e, #8e8282, #bdc3c7, #f6e58d, #ff6f61, #ff9f9f, #00a8ff, #00d2d2, #ffb8b1, #34ace0, #ff9b85, #d2dbdf, #8395a7, #20bf6b);
+            background-size: 400% 400%;
+            animation: gradientAnimation 120s ease infinite;
+            color: #ffffff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+            /*background: rgba(255, 255, 255, 0.8);*/
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /*header h1 {
+            margin: 0;
+            font-size: 1.6rem;
+        }*/
+
+        header p {
+            margin: 0.4rem 0 0;
+            font-size: 0.95rem;
+        }
+
+        /* Navigation Styling */
+        nav {
+            background-color: rgba(52, 73, 94, 0.9);
+            padding: 0.5rem 0;
+            transition: top 0.3s;
+            width: 100%;
+            z-index: 1000;
+            position: relative;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow links to wrap in smaller screens */
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+			background-color: #bacdb942;
+			margin: 1px 1px;
+        }
+
+        .nav-links a:hover {
+            background-color: #2c3e50;
+        }
+
+        /* Container and Sections */
+        .container {
+            padding: 1rem 2rem;
+        }
+
+        h1, h2 {
+            color: #34495e;
+        }
+
+        /* Sections */
+        .about, .projects, .skills, .experience, .contact, .social {
+            margin-bottom: 2rem;
+            background: #ffffff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Project and Experience Items */
+        .project-item, .experience-item {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 1rem;
+        }
+
+        .project-item h3{
+            color: blue;
+        }
+		
+		.experience-item h3 {
+            color: #2980b9;
+        }
+
+        /* Links and Buttons */
+        a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #16a085;
+        }
+
+        /* Social Links Styling */
+        .social-links a {
+            display: inline-block;
+            background-color: #34495e;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 50%;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #1abc9c;
+        }
+
+        /* Skills and Roles List */
+        .skills ul, .roles ul, .contact-info {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skills li, .roles li, .contact-info li {
+            background-color: #ecf0f1;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #2c3e50;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.4rem;
+            }
+
+            header p {
+                font-size: 0.85rem;
+            }
+
+            .nav-links a {
+                padding: 0.5rem 0.7rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .about, .projects, .skills, .experience, .contact, .social {
+                padding: 0.5rem;
+            }
+
+            .project-item, .experience-item {
+                padding-bottom: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            header p {
+                font-size: 0.75rem;
+            }
+
+            .nav-links {
+                flex-direction: column; /* Stack links vertically on very small screens */
+                align-items: center;
+            }
+
+            .nav-links a {
+                padding: 0.4rem;
+                font-size: 0.9rem;
+            }
+
+            .social-links a {
+                padding: 8px;
+                margin: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Shafiqul Islam Tuhin</h1>
+    <p>Senior Software Engineer | Oracle DBA | Web Developer</p>
+</header>
+
+<nav id="navbar">
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="#social">Social Links</a>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Shafiqul Islam Tuhin, a software developer specializing in JavaScript, Oracle APEX, modern web-based solutions, and Oracle database management, with experience in project management. I am dedicated to creating efficient, clean, and readable code and managing projects to ensure timely delivery and business alignment. I have a deep interest in ERP systems (RMG) and am committed to high coding standards, focusing on clarity and efficiency in every project I undertake.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <p>"Inshallah," I believe I can accomplish everything in modern web technology using Oracle APEX and Java. Here are some test projects I've developed using advanced Oracle APEX techniques:</p>
+
+        <div class="project-item">
+            <h3>Project 01: Advanced Oracle Apex Social Application</h3>
+            <p>Login: Create your own account, verify email, and log in.</p>
+            <p><a href="https://apex.oracle.com/pls/apex/r/shafiqadmin/lams/login" target="_blank">Social Application Link</a></p>
+        </div>
+
+        <div class="project-item">
+            <h3>Project 02: Oracle Apex Theme Customization Application</h3>
+            <p>Login: <strong>User Id:</strong> dataentry | <strong>Password:</strong> 20220101</p>
+            <p><a href="https://apex.oracle.com/pls/apex/r/shafiqadmin/dbl-group/login" target="_blank">Theme Customization Link</a></p>
+        </div>
+
+        <div class="project-item">
+            <h3>Project 03: Oracle Apex Dynamic Application</h3>
+            <p>Login: Create your own account, verify email, and log in.</p>
+            <p><a href="https://apex.oracle.com/pls/apex/r/shafiqadmin/ituhin2/project-home1" target="_blank">Dynamic Application Link</a></p>
+            <p><strong>Inbox me to assign a role in this dynamic application. Available roles:</strong></p>
+            <section class="roles">
+                <ul>
+                    <li>All Responsibility</li>
+                    <li>Benchmark RND</li>
+                    <li>Blank Role</li>
+                    <li>CMS: Contact List User</li>
+                    <li>CRM: All</li>
+                    <li>CRM: Project Management Admin</li>
+                    <li>CRM: Project Manager</li>
+                    <li>CRM: Task Creator</li>
+                    <li>CRM: Task Solver</li>
+                    <li>CRMS: Admin - Conference Room</li>
+                    <li>DBL RND</li>
+                    <li>EMS: Admin</li>
+                    <li>EMS: All</li>
+                    <li>EMS: Participant</li>
+                    <li>Global Insurance RND</li>
+                    <li>Index: Admin</li>
+                    <li>Index: All</li>
+                    <li>Index: User</li>
+                    <li>Main Administration</li>
+                    <li>SDA: Admin</li>
+                    <li>Social Application User</li>
+                    <li>And test role.</li>
+                </ul>
+            </section>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Project Management</li>
+			<li>JavaScript</li>
+            <li>Oracle APEX</li>
+            <li>HTML/CSS</li>
+            <li>SQL & PL/SQL</li>
+            <li>Web Development</li>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2>Experience <span>(Total 8+ Years)</span></h2>
+        <div class="experience-item">
+            <h3>Senior Software Engineer at DBL-Digital</h3>
+            <p>2019 - Present</p>
+            <ul class="roles">
+                <li>Developing and maintaining applications using Oracle APEX and JavaScript.</li>
+                <li>Collaborating with cross-functional teams to define, design, and ship new features.</li>
+                <li>Ensuring code quality through best practices and peer reviews.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Software Engineer at XYZ Company</h3>
+            <p>2016 - 2019</p>
+            <ul class="roles">
+                <li>Participated in the development of web applications using JavaScript and PHP.</li>
+                <li>Worked closely with clients to gather requirements and implement solutions.</li>
+            </ul>
+        </div>
+    </section>
+  	
+    <section class="experience">
+
+      <h1>Professional Experience</h1>
+
+      <h2>Currently Working</h2>
+
+      <div class="company">
+          <strong>DBL-Digital</strong> <br>
+          <em>Corporate Headquarters: South Avenue Tower, House #50 (6th Floor), Road #03, 7 Gulshan Avenue, Dhaka 1212, Bangladesh</em>
+          <div class="project">
+              <strong>Project works:</strong>
+              <ul>
+                  <li>Complete ERP for RMG (Knit Garments / Lingerie Garments) and related subsidiaries</li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="company">
+          <strong>Benchmark Software Bangladesh Ltd.</strong> <br>
+          <em>Corporate Headquarters: 12, BDBL Bhaban, 7th Floor – East Side, Dhaka 1215</em>
+      </div>
+
+      <h2>Working History</h2>
+
+      <div class="company">
+          <strong>MononSoft Ltd. (A sister concern of JMI group)</strong> <br>
+          <em>Corporate Headquarters: 50/B New Eskaton Road, Dhaka 1000</em>
+          <div class="project">
+              <strong>Project works:</strong>
+              <ul>
+                  <li>ERP Nipro JMI: A complete ERP for pharmaceuticals/medicine and medical device distribution and management, from production house to consumers</li>
+                  <li>DNA Solution: Management system for hospitality and medical labs/diagnostic centers, including COVID-19 test centers</li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="company">
+          <strong>RAK Group (RAK Consumer Products Ltd.)</strong> <br>
+          <em>Corporate Headquarters: RAK Tower, Jashimuddin Ave, Sector #3, Uttara, Dhaka - 1230</em>
+          <div class="project">
+              <strong>Project works:</strong>
+              <ul>
+                  <li>In-house software development for RAK Group and its subsidiaries covering business activities such as HRM, Payroll, Accounts, Inventory, Purchase, Sales, Production, and Export-Import</li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="company">
+          <strong>Flora Limited</strong> <br>
+          <em>Corporate Headquarters: Adamjee Court, 119-120 Motijheel, Dhaka-1000</em>
+          <div class="project">
+              <strong>Project works:</strong>
+              <ul>
+                  <li>ERP for BTV Office Automation: Automation of BTV office activities including artist recruitment, online artist payment using BEFTN, accounts and logistics management, and program/schedule management.</li>
+                  <li>Worked on modules such as Artiste Management (Payment using BEFTN and Recruitment) and Gate Pass Management, completing tasks within deadlines and achieving client satisfaction.</li>
+                  <li>Additional ERP projects: Meghna Petroleum, Dhaka WASA ERP (Accounts Module), CPS</li>
+              </ul>
+          </div>
+      </div>
+
+  </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <ul class="contact-info">
+            <li>Email: <a href="mailto:mdshafiqul.islam@dbl-digital.com">mdshafiqul.islam@dbl-digital.com</a></li>
+            <li>Phone: <a href="tel:01912962094">01912962094</a></li>
+        </ul>
+    </section>
+
+    <!-- Social Links Section -->
+    <section id="social" class="social">
+        <h2>Social Links</h2>
+        <div class="social-links">
+            <a href="https://web.facebook.com/ituhin2" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/shafiqbd/" target="_blank">LinkedIn</a>
+            <a href="https://www.youtube.com/@pagoole" target="_blank">YouTube</a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Shafiqul Islam Tuhin. All rights reserved.</p>
+</footer>
+
+<script>
+    // Make the navbar fixed on scroll
+    const navbar = document.getElementById('navbar');
+    window.onscroll = function() {
+        if (window.scrollY > 50) {
+            navbar.classList.add('fixed');
+        } else {
+            navbar.classList.remove('fixed');
+        }
+    };
+	
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+            const navbarHeight = document.getElementById('navbar').offsetHeight + 24; // Get navbar height
+
+            window.scrollTo({
+                top: target.offsetTop - navbarHeight,
+                behavior: 'smooth' // Enable smooth scrolling
+            });
+        });
+    });
+</script>
+</body>
+</html>

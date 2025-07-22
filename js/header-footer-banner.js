@@ -116,17 +116,27 @@ document.getElementById("footer").innerHTML = `
 </footer>
 `;
 
+//const navMenu = document.querySelector("nav ul");
+const navMenu = document.getElementById('pagoole-menu');
 
 // Mobile Nav Toggle (optional)
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".toggle");
   //const navMenu = document.querySelector("nav ul");
-  const navMenu = document.getElementById('pagoole-menu');
+  //const navMenu = document.getElementById('pagoole-menu');
 
   if (toggle && navMenu) {
     toggle.addEventListener("click", () => {
       //console.log(navMenu.className);
       navMenu.classList.toggle(".menu-active");
     });
+  }
+});
+
+// Close menu if clicking outside
+document.addEventListener("click", (e) => {
+  //console.log(e.target);
+  if (!navMenu.contains(e.target) && !toggle.contains(e.target)) {
+    navMenu.classList.remove("menu-active");
   }
 });

@@ -52,7 +52,7 @@ if (header) {
 
 
 // Banner
-const banner = document.getElementById("header");
+const banner = document.getElementById("banner");
 if (banner) {
   banner.innerHTML = `
 <section id="top"></section>
@@ -96,7 +96,7 @@ if (banner) {
 }
 
 // Footer
-const footer = document.getElementById("header");
+const footer = document.getElementById("footer");
 if (footer) {
   footer.innerHTML = `
   <footer class="footer">

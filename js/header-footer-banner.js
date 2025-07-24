@@ -1,5 +1,7 @@
 // Header
-document.getElementById("header").innerHTML = `
+const header = document.getElementById("header");
+if (header) {
+  header.innerHTML = `
   <header>
     <nav class="container">
    <a href="/">
@@ -46,9 +48,13 @@ document.getElementById("header").innerHTML = `
     </nav>
   </header>
 `;
+}
+
 
 // Banner
-document.getElementById("banner").innerHTML = `
+const banner = document.getElementById("header");
+if (banner) {
+  banner.innerHTML = `
 <section id="top"></section>
   <section class="hero-slider">
   <div class="slideshow-container">
@@ -87,9 +93,12 @@ document.getElementById("banner").innerHTML = `
   </div>
 </section>
 `;
+}
 
 // Footer
-document.getElementById("footer").innerHTML = `
+const footer = document.getElementById("header");
+if (footer) {
+  footer.innerHTML = `
   <footer class="footer">
   <div class="footer-container">
     <p>&copy; 2025 <a href="https://www.pagoole.com.bd">পাগল বিডি</a> || <a href="https://www.pagoole.com.bd">Pagoole BD</a> All rights reserved.</p>
@@ -115,6 +124,7 @@ document.getElementById("footer").innerHTML = `
   </div>
 </footer>
 `;
+}
 
 //const navMenu = document.querySelector("nav ul");
 const navMenu = document.getElementById('pagoole-menu');

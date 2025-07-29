@@ -1,5 +1,7 @@
 // Header
-document.getElementById("header").innerHTML = `
+const header = document.getElementById("header");
+if (header) {
+  header.innerHTML = `
   <header>
     <nav class="container">
    <a href="/">
@@ -46,9 +48,13 @@ document.getElementById("header").innerHTML = `
     </nav>
   </header>
 `;
+}
+
 
 // Banner
-document.getElementById("banner").innerHTML = `
+const banner = document.getElementById("banner");
+if (banner) {
+  banner.innerHTML = `
 <section id="top"></section>
   <section class="hero-slider">
   <div class="slideshow-container">
@@ -87,9 +93,12 @@ document.getElementById("banner").innerHTML = `
   </div>
 </section>
 `;
+}
 
 // Footer
-document.getElementById("footer").innerHTML = `
+const footer = document.getElementById("footer");
+if (footer) {
+  footer.innerHTML = `
   <footer class="footer">
   <div class="footer-container">
     <p>&copy; 2025 <a href="https://www.pagoole.com.bd">পাগল বিডি</a> || <a href="https://www.pagoole.com.bd">Pagoole BD</a> All rights reserved.</p>
@@ -115,18 +124,29 @@ document.getElementById("footer").innerHTML = `
   </div>
 </footer>
 `;
+}
 
+//const navMenu = document.querySelector("nav ul");
+const navMenu = document.getElementById('pagoole-menu');
 
 // Mobile Nav Toggle (optional)
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".toggle");
   //const navMenu = document.querySelector("nav ul");
-  const navMenu = document.getElementById('pagoole-menu');
+  //const navMenu = document.getElementById('pagoole-menu');
 
   if (toggle && navMenu) {
     toggle.addEventListener("click", () => {
       //console.log(navMenu.className);
       navMenu.classList.toggle(".menu-active");
     });
+  }
+});
+
+// Close menu if clicking outside
+document.addEventListener("click", (e) => {
+  //console.log(e.target);
+  if (!navMenu.contains(e.target) && !toggle.contains(e.target)) {
+    navMenu.classList.remove("menu-active");
   }
 });

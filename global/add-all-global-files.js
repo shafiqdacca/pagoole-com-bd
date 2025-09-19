@@ -1,5 +1,4 @@
 const baseUrl = "https://pagoole.com"; // change this to your domain
-const cssBase = "https://pagoole.com/css";
 
 // List of JS files (relative paths)
 const scripts = [
@@ -7,7 +6,7 @@ const scripts = [
     //"/js/search-suggessions.js",
     "/js/pagoole.js",
     "/js/loading.js",
-    //"/js/header.js",
+    "/js/header.js",
     "/js/footer.js"
 ];
 
@@ -23,12 +22,13 @@ function loadScripts(fileList) {
 
 // CSS files list
 const cssFiles = [
-    "global-css.css",
-    "header-footer-report-project.css",
-    "custom.css",
-    "loading.css",
-    "footer.css",
-    "pagoole.css"
+    "/css/global-css.css",
+    "/css/header-footer-report-project.css",
+    "/css/custom.css",
+    "/css/loading.css",
+    "/css/footer.css",
+    "/css/pagoole.css",
+    "/css/styles.css"
 ];
 
 // Load CSS dynamically
@@ -36,7 +36,7 @@ function loadCSS(files) {
     files.forEach(file => {
         const link = document.createElement("link");
         link.rel = "stylesheet";
-        link.href = cssBase + "/" + file;
+        link.href = baseUrl + "/" + file;
         document.head.appendChild(link);
     });
 }

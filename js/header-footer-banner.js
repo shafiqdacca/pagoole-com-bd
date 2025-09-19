@@ -95,6 +95,7 @@ if (banner) {
 `;
 }
 
+/*
 // Footer
 const footer = document.getElementById("footer");
 if (footer) {
@@ -125,6 +126,7 @@ if (footer) {
 </footer>
 `;
 }
+*/
 
 //const navMenu = document.querySelector("nav ul");
 const navMenu = document.getElementById('pagoole-menu');

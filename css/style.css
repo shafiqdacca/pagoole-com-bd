@@ -241,13 +241,10 @@ footer {
 }
 */
 
-.footer-social a {
+.footer-social1 a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  background-color: #e0e0e0;
   color: #333;
   border-radius: 50%;
   font-size: 1rem;
@@ -255,7 +252,7 @@ footer {
   text-decoration: none;
 }
 
-.footer-social a:hover {
+.footer-social1 a:hover {
   background-color: #4070f4;
   color: #fff;
   transform: scale(1.1);

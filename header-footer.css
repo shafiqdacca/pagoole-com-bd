@@ -159,10 +159,7 @@ footer {
 .footer-social a {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  background-color: #e0e0e0;
+  justify-content: center;  
   color: #333;
   border-radius: 50%;
   font-size: 1rem;

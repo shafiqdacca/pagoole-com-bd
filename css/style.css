@@ -30,7 +30,7 @@ header {
 }
 
 header,
-footer {
+footer1 {
   background: rgb(95 196 255) !important;
   /* #97fb97; background-color: #0ffb0f;*/
 }
@@ -40,6 +40,89 @@ footer {
   flex: 1 1 33.33%;
 }
 */
+
+footer hr {
+  --chatting-popup-border-radious: 4px;
+  --default-social-color: #007bff;
+  --default-social-bg-color: #f3f2f0;
+  --global-common-color-green: #05c809;
+  --grid-gap: 1px;
+  --comapany-logo: './assets/images/no-image.svg';
+  --default-background-color: #f4f2ee;
+  --default-navbar-color: #fff;
+  --default-footer-color: #f2f2f2;
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc800;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #ffc800;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc800;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 255, 200, 0;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 200, 0;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 218, 220, 225;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+  --fa-style-family-brands: "Font Awesome 6 Brands";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+  font-family: 'Roboto Slab';
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  font-size: 0.9rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+  height: 1px;
+}
 
 @media (min-width: 768px) {
   .footer-container> :nth-child(1) {
@@ -211,51 +294,6 @@ h6 {
 
 .grid-3 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-footer {
-  padding: 1rem;
-  margin-top: 2rem;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.footer-container {
-  max-width: 1024px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer-container p {
-  color: #000000;
-  margin: 0;
-  font-size: 0.9rem;
-}
-
-/*
-.footer-social {
-  display: flex;
-  gap: 0.75rem;
-}
-*/
-
-.footer-social1 a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #333;
-  border-radius: 50%;
-  font-size: 1rem;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  text-decoration: none;
-}
-
-.footer-social1 a:hover {
-  background-color: #4070f4;
-  color: #fff;
-  transform: scale(1.1);
 }
 
 button {
@@ -551,16 +589,4 @@ button1:hover {
   from {
     width: 0;
   }
-}
-
-.tal {
-  text-align: left;
-}
-
-.tac {
-  text-align: center;
-}
-
-.tar {
-  text-align: right;
 }

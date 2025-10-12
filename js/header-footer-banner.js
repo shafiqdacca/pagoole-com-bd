@@ -1,9 +1,9 @@
 // Header
 const header = document.getElementById("header");
 if (header) {
-  header.innerHTML = `
+  header.outerHTML = `
   <header>
-    <nav class="container">
+    <nav id=navbar class="container">
    <a href="/">
 <img src="https://pagoole.com/assets/images/navbar-logo-64x64.png" 
      alt="পাগল বিডি Pagol BD"
@@ -78,7 +78,6 @@ if (banner) {
       <img src="https://apex.oracle.com/pls/apex/shafiqadmin/all/getblob/pagoole-banner-4" width="1200" height="800" loading="lazy" alt="পাগল বিডি Pagol BD">
       <div class="text">My Team</div>
     </div>
-
     <!-- Arrows -->
     <a class="prev" href="#" onclick="event.preventDefault(); plusSlides(-1)">&#10094;</a>
     <a class="next" href="#" onclick="event.preventDefault(); plusSlides(1)">&#10095;</a>
@@ -152,3 +151,59 @@ document.addEventListener("click", (e) => {
     navMenu.classList.remove("menu-active");
   }
 });
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next / previous controls
+function plusSlides(n) {
+  slideIndex += n;
+  showSlides(slideIndex);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  slideIndex = n;
+  showSlides(slideIndex);
+}
+
+function showSlides(n) {
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
+  if (slides.length === 0) return;
+
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
+
+  // Hide all slides
+  for (let slide of slides) slide.style.display = "none";
+  for (let dot of dots) dot.className = dot.className.replace(" active", "");
+
+  const currentSlide = slides[slideIndex - 1];
+  currentSlide.style.display = "block";
+  if (dots[slideIndex - 1]) dots[slideIndex - 1].className += " active";
+
+  // Wait for current image to load, then move to next after 5s
+  waitForCurrentImageLoad(slideIndex, () => {
+    setTimeout(() => plusSlides(1), 5000);
+  });
+}
+
+// ✅ Wait until current image is loaded before moving to next
+function waitForCurrentImageLoad(index, callback) {
+  const currentSlide = document.querySelectorAll(".mySlides")[index - 1];
+  if (!currentSlide) return;
+
+  const img = currentSlide.querySelector("img");
+  if (!img) {
+    callback(); // no image — continue anyway
+    return;
+  }
+
+  if (img.complete) {
+    callback(); // already loaded
+  } else {
+    img.addEventListener("load", callback, { once: true });
+    img.addEventListener("error", callback, { once: true });
+  }
+}

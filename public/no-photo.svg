@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- Background frame -->
+  <rect x="5" y="5" width="290" height="190" rx="12"
+        fill="#f8fafc" stroke="#e2e8f0" stroke-width="4"/>
+
+  <!-- Mountains -->
+  <polygon points="75,150 120,90 165,150"
+           fill="#cbd5e1"/>
+  <polygon points="140,150 185,110 230,150"
+           fill="#bcd1e6"/>
+
+  <!-- Sun -->
+  <circle cx="90" cy="70" r="18" fill="#fbd38d"/>
+
+  <!-- Text -->
+  <text x="150" y="185" text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="14"
+        fill="#94a3b8">
+    No Image Available
+  </text>
+</svg>

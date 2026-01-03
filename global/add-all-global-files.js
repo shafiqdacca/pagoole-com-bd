@@ -1,7 +1,7 @@
 /**
  * Adds global CSS and JS files to the page.
  */
-const globalFilePath = "https://www.pagoole.com/";
+const globalFilePath = "https://www.pagoole.com.bd/";
 
 // List of global CSS files
 const globalCssFiles = [

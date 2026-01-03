@@ -3,47 +3,15 @@ const header = document.getElementById("header");
 if (header) {
   header.outerHTML = `
   <header>
-    <nav id=navbar class="container">
-   <a href="/">
-<img src="https://pagoole.com/assets/images/navbar-logo-64x64.png" 
-     alt="পাগল বিডি Pagol BD"
-     width="50"
-     height="50"
-     style="vertical-align: middle;
-            border-radius: 50%;
-            background-color: #0000ff5c;">
-  <!--<span style="
-    font-weight: bold;
-    font-size: 1.8rem;
-    background: linear-gradient(
-      90deg,
-      rgb(4, 145, 11),
-      #00ffaa,
-      rgb(255, 0, 0),
-      #8855ff,
-      #ff5599
-    );
-    vertical-align: middle;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-  ">
-    পাগল বিডি Pagoole BD
-  </span>-->
-  <span class="logo-text">
-      পাগল বিডি Pagoole BD
-  </span>
-</a>
-
-
-
+    <nav id=navbar class="container" >
+<span class=" md:inline" style="font-size: 32px;"><a aria-label="Pagoole Home" class="inline-flex items-center tracking-tight select-none align-baseline" style="background:transparent;text-shadow:none;line-height:1;font-size:inherit" href="https://pagoole.com/"><span style="color:rgb(234, 67, 53)">P</span><span style="color:rgb(66, 133, 244)">a</span><span style="color:#00C853">g</span><span style="color:rgb(251, 188, 5)">o</span><span style="color:#00C853">o</span><span style="color:rgb(66, 133, 244)">l</span><span style="color:rgb(234, 67, 53)">e</span></a></span>
       <div class="toggle">☰</div>
       <ul id="pagoole-menu">
-        <li><a href="index.html"><i class="fas fa-home" style="color: blue;"></i> Home</a></li>
-        <li><a href="about.html"><i class="fas fa-user" style="color: #e67e22;"></i> About</a></li>
-        <li><a href="portfolio.html"><i class="fas fa-briefcase" style="color: #2ecc71;"></i> Portfolio</a></li>
-        <li><a href="services.html"><i class="fas fa-cog" style="color: #9b59b6;"></i> Services</a></li>
-        <li><a href="contact.html"><i class="fas fa-envelope" style="color: #e74c3c;"></i> Contact</a></li>
+        <li><a href="https://pagoole.com/"><i class="fas fa-home" style="color: blue;"></i> Home</a></li>
+        <li><a href="https://discountshop.pagoole.com/"><i class="fas fa-user" style="color: #e67e22;"></i> Discount Shop</a></li>
+        <li><a href="https://pagoole.com/dunamic-solutions"><i class="fas fa-briefcase" style="color: #2ecc71;"></i> Dynamic Solution</a></li>
+        <li><a href="https://account.pagoole.com/"><i class="fas fa-cog" style="color: #9b59b6;"></i> My Profile</a></li>
+        <li><a href="https://account.pagoole.com/login"><i class="fas fa-sign-in-alt" style="color: #e74c3c;"></i> Login</a></li>
       </ul>
     </nav>
   </header>
@@ -60,28 +28,37 @@ if (banner) {
   <div class="slideshow-container">
     <!-- Slide 1 -->
     <div class="mySlides fade">
-      <img src="https://apex.oracle.com/pls/apex/shafiqadmin/all/getblob/pagoole-banner-1" style="width:100%" loading="lazy" alt="পাগল বিডি Pagol BD">
+      <a href="https://pagoole.com" target="_self">
+        <img src="public/pagoole-dot-com-bangla.png" style="width:100%; cursor:pointer;" loading="lazy" alt="পাগল বিডি Pagol BD">
+      </a>
       <div class="text">Welcome To My Site!</div>
     </div>
     <!-- Slide 2 -->
     <div class="mySlides fade">
-      <img src="https://apex.oracle.com/pls/apex/shafiqadmin/all/getblob/pagoole-banner-2" style="width:100%" loading="lazy" alt="পাগল বিডি Pagol BD">
-      <div class="text">My Campus</div>
+      <a href="https://discountshop.pagoole.com" target="_self">
+        <img src="https://pagoole.com/pagoole_discountshop_online.png" style="width:100%; cursor:pointer;" loading="lazy" alt="পাগল বিডি Pagol BD">
+      </a>
+      <div class="text">পাগল ডিসকাউন্ট শপ</div>
     </div>
     <!-- Slide 3 -->
     <div class="mySlides fade">
-      <img src="https://apex.oracle.com/pls/apex/shafiqadmin/all/getblob/pagoole-banner-3" style="width:100%" loading="lazy" alt="পাগল বিডি Pagol BD">
-      <div class="text">My Workstation</div>
+      <a href="https://pagoole.com/dunamic-solutions" target="_self">
+        <img src="https://pagoole.com/dynamic_solutions.png" style="width:100%; cursor:pointer;" loading="lazy" alt="পাগল বিডি Pagol BD">
+      </a>
+      <div class="text">Dynamic Solution</div>
     </div>
     <!-- Slide 4 -->
     <div class="mySlides fade">
-      <img src="https://apex.oracle.com/pls/apex/shafiqadmin/all/getblob/pagoole-banner-4" width="1200" height="800" loading="lazy" alt="পাগল বিডি Pagol BD">
-      <div class="text">My Team</div>
+      <a href="https://account.pagoole.com/" target="_blank">
+        <img src="public/pagoole-accoutn_banner.png" width="1200" height="800" style="cursor:pointer;" loading="lazy" alt="পাগল বিডি Pagol BD">
+      </a>
+      <div class="text">My Profile</div>
     </div>
     <!-- Arrows -->
     <a class="prev" href="#" onclick="event.preventDefault(); plusSlides(-1)">&#10094;</a>
     <a class="next" href="#" onclick="event.preventDefault(); plusSlides(1)">&#10095;</a>
-  </div>
+</div>
+
 
   <!-- Dots -->
   <div class="dots-container" style="text-align:center">
@@ -185,7 +162,7 @@ function showSlides(n) {
 
   // Wait for current image to load, then move to next after 5s
   waitForCurrentImageLoad(slideIndex, () => {
-    setTimeout(() => plusSlides(1), 5000);
+    setTimeout(() => plusSlides(1), 10000);
   });
 }
 

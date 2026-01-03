@@ -29,7 +29,9 @@ header {
   z-index: 100;
 }
 
-header,
+header{
+  background-color: white;
+}
 footer1 {
   background: rgb(95 196 255) !important;
   /* #97fb97; background-color: #0ffb0f;*/
